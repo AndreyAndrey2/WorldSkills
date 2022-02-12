@@ -8,4 +8,7 @@
     <string name="calc">Calculator</string>
     <string name="rand">random</string>
     <string name="randomm">Random</string>
+    <string name="calculator">Calculator</string>
+    <string name="res">Результат</string>
+    <string name="clear">Очистить</string>
 </resources>

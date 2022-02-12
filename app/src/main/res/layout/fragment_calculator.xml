@@ -5,19 +5,85 @@
     android:layout_height="match_parent"
     tools:context=".ui.CalculatorFragment">
 
-    <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <FrameLayout
+        android:layout_width="348dp"
+        android:layout_height="168dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/color_bg">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculator"
-        android:textSize="32dp"
-        android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/text1"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Первое"
+            android:background="@drawable/color_back"
+            tools:ignore="TouchTargetSizeCheck"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Второе"
+            android:background="@drawable/color_back"
+            tools:ignore="TouchTargetSizeCheck"
+            android:layout_marginTop="72dp"
+            android:layout_marginLeft="16dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/kirill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/btn_sum"
+        android:layout_width="165dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/color_back"
+        android:layout_marginLeft="32dp">
+
+        <TextView
+            android:id="@+id/text_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/res"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/btn_clear"
+        android:layout_width="165dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/color_back"
+        android:layout_marginRight="32dp">
+
+        <TextView
+            android:id="@+id/text_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
 
 </FrameLayout>
